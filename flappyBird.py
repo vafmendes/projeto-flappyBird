@@ -11,13 +11,13 @@ geracao = 0
 TELA_LARGURA = 500
 TELA_ALTURA = 700
 
-IMAGE_CANO = pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'pipe.png')))
-IMAGEM_CHAO = pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'base.png')))
-IMAGEM_BACKGROUND = pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'bg.png')))
+IMAGE_CANO = pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'pipe.png')))
+IMAGEM_CHAO = pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'base.png')))
+IMAGEM_BACKGROUND = pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'bg.png')))
 IMAGENS_PASSARO = [
-    pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'bird1.png'))),
-    pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'bird2.png'))),
-    pygame.transform.scale2x(pygame.image.load(os.path.join('jogo\imgs', 'bird3.png')))
+    pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'bird1.png'))),
+    pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'bird2.png'))),
+    pygame.transform.scale2x(pygame.image.load(os.path.join('imgs', 'bird3.png')))
 ]
 
 pygame.font.init()
@@ -209,7 +209,6 @@ def main(genomas, config):
     rodando = True
     while rodando:
         relogio.tick(30)
-
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 rodando = False
